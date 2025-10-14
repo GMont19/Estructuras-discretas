@@ -49,7 +49,7 @@ descripción: Dar una lita de numeros ya sea con elementos repetodos o sin ellos
 uso: lista
 -}
 
-conjuntoLista :: (Eq a) => [a] -> [a]
+	conjuntoLista :: (Eq a) => [a] -> [a]
 conjuntoLista [] = []
 conjuntoLista (x:xs)
   | x `elem` xs = x : conjuntoLista (filter (/= x) xs)
